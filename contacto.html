@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta content="text/html">
+  <meta charset="utf-8">
+	<title>contacto de la empresa</title>
+  <link rel="stylesheet" type="text/css" href="css/estilos.css">
+  <link rel="stylesheet" type="text/css">
+
+  <style>
+form {
+    width: 450px;
+    margin: auto;
+    background:#E5E7E9;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+    bottom: -100px;
+}
+
+input, textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+}
+
+textarea {
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+#boton{
+    background: #008000;
+    color: #fff;
+    padding: 20px;
+}
+
+#boton:hover {
+    cursor: pointer;
+}
+
+@media (max-width:480px) {
+    form{
+        width: 100%;
+    }
+}
+
+h3 {
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    background:#008000;
+}
+
+.imagen img {
+  width: 380px;
+  height: 200px;
+  position:relative;
+  bottom:-15px;
+  left: 25%;
+  align-content: center;
+}
+
+aside h2{
+   color: #0D5D00;
+   font-weight: bold;
+   padding: 10px 0;
+   text-decoration: none;
+}
+
+.ubicacion {
+  border: 1px solid #ccc;
+  padding: 0 1rem;
+  margin: 1rem;
+}
+
+.redes-sociales {
+    display: inline; /* the default for span */
+    width: 40px;
+    height: 10px;
+    padding: 150px;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-left: 15px;
+}
+
+div.datos-contacto {
+  padding-bottom: -15px;
+  height: 80px;
+  border:1px solid white;
+}
+
+div.datos-contacto p.email,p.tel {
+  font-size: 25px;
+  color: white;
+  font-style:bold;
+  text-align: center;
+}
+
+  </style>
+</head>
+<body>
+	<header>
+        <div class="contenedor">
+            <div class="logo"><img src="img/nat_com.jpg" alt="logotipo de la pagina">
+            </div> <!--.logo-->
+        </div> <!--.contenedor-->
+    </header>
+    
+     <div class="navegacion">
+        <nav>
+            <ul class="clearfix">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#">Nosotros</a>
+                  <ul>
+                    <li><a href="nosotros.html">¿Quiénes somos?</a></li>
+                    <li><a href="equipo.html">Nuestro equipo</a></li>
+                    <li><a href="socios_com.html">Socios Comerciales</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Blog</a>
+                    <ul>
+                      <li><a href="publicaciones.html">Publicaciones</a></li>
+                      <li><a href="FAQ.html">Preguntas frecuentes</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Tienda</a>
+                    <ul>
+                      <li><a href="tienda.html">Compras Online</a></li>
+                    </ul>
+                </li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="#">Avisos</a>
+                    <ul>
+                       <li><a href="politica.html">Política de privacidad</a></li>
+                      <li><a href="terminos.html">Términos y condiciones</a></li>
+                      <li><a href="devoluciones.html">Compras y devoluciones</a></li>
+                    </ul>
+                    </li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <div class="contenido">
+        <main>
+            <article>
+                <h3>Ciudad</h3>
+                <div class="imagen">
+                  <img src="img/ciudad.png" alt="visitar londres">
+                </div>
+            </article>
+            <article>
+                <h3>Ubicación</h3>
+                <div class="ubicacion">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d119602.67880768496!2d-103.60806906837234!3d20.482284284612415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m5!1s0x842f55c97e974a2d%3A0x1c5169581f5d2e55!2sDucoragro+S.A.+de+C.V.%2C+Tlajomulco+de+Z%C3%BA%C3%B1iga%2C+Jalisco!3m2!1d20.4821375!2d-103.5380273!4m0!5e0!3m2!1ses-419!2smx!4v1537415299628" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe> 
+                </div>
+                
+          </article>
+
+            <form action="enviar.php" method="post">
+            <h3>CONTÁCTENOS</h3>
+              <input type="text" name="nombre" placeholder="Nombre" required>
+              <input type="text" name="apellidos" placeholder="Apellidos" required>
+              <input type="text" name="correo" placeholder="Correo" required>
+              <input type="text" name="telefono" placeholder="Teléfono" required>
+              <input type="text" name="asunto" placeholder="Asunto" required>
+              <textarea name="mensaje" placeholder="Escriba aqui su mensaje" required></textarea>
+              <input type="submit" value="ENVIAR" id="boton">
+        </form>
+
+        <footer>
+          <div class="datos-contacto">
+            <p class="tel"><span>Teléfono:</span> 33-31-08-47-99</p>
+            <hr>
+            <p class="email"><span>Correo:</span> NaturalCompany2018@gmail.com</p>
+          </div>
+        </footer>
+
+      </main>
+
+        <aside class="sidebar" >
+            <h2>otros enlaces</h2>
+            <ul>
+              <li><a href="http://www.integramasmas.com/una-historia-sobre-la-perseverancia-el-cuento-del-bambu-japones/" target="_blank">Historia del Bambú</a></li>
+              <li><a href="https://www.ismaeldelacruz.es/la-bonita-historia-del-bambu-japones-y-el-exito-en-la-vida/" target="_blank">Orígen de nuestro proyecto</a></li>
+              <li><a href="galeria.html" target="_blank">Galería de imágenes</a></li>
+              <li><a href="videos.html" target="_blank">Vídeos</a></li>
+            </ul>
+              <br>
+            <div class="img-aside">
+              <img src="img/bamboo.jpg" alt="bambú"><img src="img/bio.jpg" alt="producto 100% biodegradable">
+            </div>
+        </aside>
+    </div> <!--contenido-->
+
+	<footer>
+      <div class="contenedor">
+          <div class="nosotros">
+              <h2>Sobre nosotros</h2>
+              <p>
+                Empresa innovadora, en busca de generar satisfacción en nuestros clientes mediante productos sustentables, biodegradables y de alta calidad.
+              </p>
+          </div>
+
+            <div class="redes-sociales">
+            <a href="https://www.facebook.com/LegionGandalf/" target="_blank"><img alt="siguenos en facebook" height="32" src="http://2.bp.blogspot.com/-q_Tm1PpPfHo/UiXnJo5l-VI/AAAAAAAABzU/MKdrVYZjF0c/s1600/face.png" title="siguenos en facebook" width="32" /></a>
+            <a href="www.instagram.com" target="_blank"><img alt="sígueme en Instagram" height="32" src="http://2.bp.blogspot.com/-kQop92g4NsM/UidPJ06ER1I/AAAAAAAACAA/0mj0jK5hhXM/s1600/instagram2.png" title="sígueme en Instagram" width="32" /></a>
+            <a href="www.twitter.com" target="_blank"><img alt="siguenos en Twitter" height="32" src="http://3.bp.blogspot.com/-wlwaJJG-eOY/UiXnHS2jLsI/AAAAAAAAByQ/I2tLyZDLNL4/s1600/Twitter+NEW.png" title="siguenos en Twitter" width="32" /></a>
+            </div>
+
+          <div class="menu">
+            <h2>Menú de navegación</h2>
+            <nav>
+              <a href="index.html">Inicio</a>
+              <a href="nosotros.html">Nosotros</a>
+              <a href="publicaciones.html">Blog</a>
+              <a href="tienda.html">Tienda</a>
+              <a href="contacto.html">Contacto</a>
+              <a href="politica.html">Avisos</a>
+            </nav>
+          </div>
+      </div>
+
+      <p class="copyright">
+          Todos los derechos reservados &copy;. Universidad de Guadalajara 2018.
+      </p>
+    </footer>
+
+</body>
+</html>
+
+<!-- Recursos par íconos de redes sociales: 
+  https://www.inovablog.com/2013/09/como-poner-iconos-redes-sociales-blog-web-botones.html
+-->
+
